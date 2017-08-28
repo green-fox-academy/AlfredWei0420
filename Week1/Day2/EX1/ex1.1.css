@@ -1,0 +1,21 @@
+/* Exercise 1.1 CSS*/
+
+div div{
+    width:200px;
+    height: 200px;
+    float: left;
+}
+.item.green{
+    
+    background-color: green;
+}
+
+.item.yellow{
+    
+    background-color: yellow;
+}
+
+.item.purple{
+    
+    background-color: purple;
+}

@@ -1,0 +1,49 @@
+/* Exercise4 CSS*/
+
+.container{
+    width: 800px;
+    height: 600px;
+    background:#f05408;  
+    margin: auto;
+}
+
+
+.box{
+    width: 700px;
+    height: 265px;
+    box-shadow: 3px 6px 10px 2px;
+    border-radius: 10px;
+    opacity: 0.7;
+    background:linear-gradient(#e7753e,#ca6b3d);
+    position: relative;
+    top: 25%;
+    left: 50px;
+    text-align: center;
+}
+
+
+.one{
+    width: 160px;
+    height: 40px;
+    display: inline-block;
+    padding: 10px;
+    margin:90px 70px;
+    box-shadow: 3px 6px 10px 2px;
+    background-image: linear-gradient(to right, blue, #827ADC);
+}
+
+.two{
+    width: 160px;
+    height: 40px;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 3px 6px 10px 2px;
+    background-image: linear-gradient(to right, yellow, #E3E263);
+}
+
+p{
+    text-shadow: 1px 1px white;
+    font-size: 25px;
+    position: relative;
+    bottom: 20px;
+  }

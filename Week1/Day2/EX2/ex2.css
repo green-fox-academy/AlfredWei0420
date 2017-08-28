@@ -1,0 +1,48 @@
+/* Exercise2 CSS*/
+div{
+    margin: auto;
+}
+
+.Container{
+    height: 600px;
+    width: 800px;
+    border: 4px solid black;
+    border-radius: 25px;
+}
+
+.Line{
+    margin-top: 50px;
+    border-top: 4px solid black;
+    width: 800px;
+}
+
+.Header{
+    height: 50px;
+    width: 700px;
+    margin-top: 15px;
+    background: #b02aff;
+    margin-left: 50px;
+}
+
+.Header>div{
+    width: 90px;
+    height: 30px;
+    background-color: cyan;
+    display: inline-block;
+    margin: 10px;
+}
+
+.Content{
+    height: 440px;
+    width: 450px;
+    background-color: #ffd62a;
+    margin-left: 50px;
+    float: left;
+}
+
+aside{
+    height: 440px;
+    width: 250px;
+    background-color: #51d400;
+    float: left;
+}

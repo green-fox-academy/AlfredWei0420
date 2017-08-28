@@ -1,0 +1,15 @@
+/* Exercise5.3 CSS*/
+
+div>div {
+    height: 50px;
+    background: #999;
+    margin-top: 15px;
+    text-align: left;
+    color: white;
+    padding-left: 10px;
+}
+
+[data-count="10"]{
+    margin-top: 0;
+}
+

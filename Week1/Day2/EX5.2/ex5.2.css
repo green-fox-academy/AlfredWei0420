@@ -1,0 +1,12 @@
+/* Exercise5.2 CSS*/
+
+div>div {
+    height: 50px;
+    background: #999;
+    margin-top: 15px;
+}
+
+[data-count="10"]{
+    margin: 0;
+}
+

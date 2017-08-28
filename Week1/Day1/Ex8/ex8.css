@@ -1,0 +1,25 @@
+/* Exercise 8 CSS*/
+
+h1,p{
+
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+input[type="fname"],input[type="lname"],
+input[type="email"],input[type="password"]{
+    display: block;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+label[for="service"]{
+    display: inline-block;
+    margin-left: -15px;
+}
+
+input[type="button"]{
+    display: block;
+    margin-left: 20px;   
+}

@@ -1,0 +1,16 @@
+/* Exercise 6 CSS*/
+
+h1 {
+    /*color: black8 ;*/
+}
+
+p {
+    border-left: 2px solid black;
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 300px;
+}
+
+body{
+	font-family:Times;
+}

@@ -1,0 +1,20 @@
+/* Exercise 5 CSS*/
+
+body{
+	font-family: Times;
+}
+h1{
+	color:blue;
+}
+
+h2{
+	color:#f8ab21;
+}
+
+.blue{
+	color:blue;
+}
+
+.red{
+	color:red;
+}

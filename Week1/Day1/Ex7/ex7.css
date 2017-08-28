@@ -1,0 +1,19 @@
+/* Exercise 7 CSS*/
+
+.big{
+    color: blue;
+}
+
+.container div{
+    border: 1px solid green;
+    width: 300px;
+}
+
+div{
+    font-weight: bold;
+}
+
+p{
+    width: 300px;
+    background: yellow;
+}

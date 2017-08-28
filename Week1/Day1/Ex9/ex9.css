@@ -1,0 +1,57 @@
+/* Exercise 9 CSS*/
+#container{
+    width: 500px;
+    height: 640px;  
+    background-color: gray;
+  }
+
+  #header{
+      height:40px;
+      background: black;
+  }
+
+  #header p{
+      color: white;
+      word-spacing: 20px;
+      padding: 10px;
+  }
+
+  span{
+      word-spacing: 3px;
+  }
+
+  
+  #main{
+      height: 600px;
+      background: orangered;
+  }
+
+  h3.title{
+      color: black;
+      margin: 0;
+      clear: left;
+      padding-left: 30px;
+      padding-bottom: 10px;
+      padding-top: 30px;
+  }
+
+  h3.tip{
+      padding-left: 25px;
+      padding-top: 58px;
+  }
+
+
+  .button{
+      width: 104px;
+      height: 29px;
+      background: yellow;
+      text-align: center;
+      float: left;
+      margin: 7px;
+      padding: 3px;
+  }
+
+  #main p{
+      width: 210px;
+      padding-left:20px;
+  }

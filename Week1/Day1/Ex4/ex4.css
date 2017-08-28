@@ -1,0 +1,15 @@
+/* Exercise 4 CSS*/
+h1{
+	color:#f8ab21;
+}
+
+p{
+	
+	color: #f8ab21;
+	text-transform: capitalize;
+	font-size:50px;
+}
+
+span{
+	text-transform: lowercase;
+}

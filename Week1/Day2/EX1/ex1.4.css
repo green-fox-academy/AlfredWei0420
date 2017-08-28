@@ -1,0 +1,29 @@
+/* Exercise 1.4 CSS*/
+
+div {
+    
+    width: 200px;
+    height: 800px;
+}
+.item.green{
+    
+    background-color: green;
+    height: 200px;
+    
+}
+
+.item.yellow{
+   
+    background-color: yellow;
+    height: 400px;
+    position: relative;
+    bottom: -200px;  
+}
+
+.item.purple{
+    
+    background-color: purple;
+    height: 200px;
+    position: relative;
+    top: -400px;
+}

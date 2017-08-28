@@ -1,0 +1,33 @@
+/* Exercise 2 CSS*/
+
+div{
+	width: 385px;
+    /* height: 720px; */
+    background: #4285f4;
+    padding: 20px;
+}
+
+p {
+	width: 385px;
+    /* height: 110px; */
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    /* padding-top: 70px; */
+    line-height: 180px;
+}
+
+.n{
+	background: #e67676;	
+}
+
+.e{
+	background: #f2f062;
+}
+.s{
+	background: #a9e6e6;	
+}
+.w{
+	background: #7692e4;
+}

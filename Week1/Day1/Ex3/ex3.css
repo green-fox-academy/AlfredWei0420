@@ -1,0 +1,36 @@
+/* Exercise 3 CSS*/
+
+div{
+	width: 300px;
+	height: 340px;
+	background: #4285f4;
+	margin: 5px;
+	padding:20px
+}
+
+p{
+	width:300px;
+	height: 120px;
+	color:white;
+	font-size: 25px;
+	margin:0px;
+	padding-top: 50px;
+	text-align:center;
+	/*line-height
+	width and height define */
+}
+
+.U1{
+	background-color: #e67676;
+}
+
+.U2{
+	background-color: #e67676;
+}
+
+.B1{
+	background-color: #a9e6e6;
+}
+.B2{
+	background-color: #a9e6e6;
+}

@@ -1,0 +1,52 @@
+/* Exercise2.1 CSS*/
+div{
+    margin: auto;
+}
+
+.Header{
+    width: 540px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.main{
+    width: 300px;
+    height: 500px;
+    background-color: red;
+    float: left;
+    position: relative;
+    left: 290px;
+}
+
+.main>div{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin-top: 430px;
+    margin-left: 230px;
+}
+
+.left{
+    width: 100px;
+    height: 500px;
+    background-color: orange;
+    float: left;
+    position: relative;
+    left: -130px;
+}
+
+.right{
+    width: 100px;
+    height: 500px;
+    background-color: purple;
+    float: left;
+    position: relative;
+    right: -210px;
+}
+
+.footer{
+    width: 540px;
+    height: 100px;
+    background-color: blue;
+    clear: left;
+}

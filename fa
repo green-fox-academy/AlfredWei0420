@@ -1,0 +1,630 @@
+[1mdiff --git a/Week1/Day1/Ex1/ex1.css b/Week1/Day1/Ex1/ex1.css[m
+[1mdeleted file mode 100644[m
+[1mindex 45ad28c..0000000[m
+[1m--- a/Week1/Day1/Ex1/ex1.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,18 +0,0 @@[m
+[31m-/* Exercise 1 CSS*/[m
+[31m-[m
+[31m-div{[m
+[31m-	/*height: 130px;*/[m
+[31m-	width: 360px;[m
+[31m-	background: #0e91a1;[m
+[31m-	border: 4px solid #7dce94;[m
+[31m-	margin: 15px;[m
+[31m-}[m
+[31m-[m
+[31m-p{[m
+[31m-	font-size: 30px;[m
+[31m-	color: #005566;[m
+[31m-	margin-top: 10px;[m
+[31m-	height: 130px;[m
+[31m-	/*width: 360px;*/[m
+[31m-	padding-left: 10px;[m
+[31m-}[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex1/ex1.html b/Week1/Day1/Ex1/ex1.html[m
+[1mdeleted file mode 100644[m
+[1mindex 3c21adf..0000000[m
+[1m--- a/Week1/Day1/Ex1/ex1.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,20 +0,0 @@[m
+[31m-<!doctype html>[m
+[31m-[m
+[31m-<html lang="en">[m
+[31m-	<head>[m
+[31m-		<title>EX1</title>[m
+[31m-		<meta charset="UTF-8">[m
+[31m-		<link rel="stylesheet" href="ex1.css">		[m
+[31m-	</head>[m
+[31m-	<body>[m
+[31m-		<div >[m
+[31m-			<p>Velox</p>[m
+[31m-		</div>[m
+[31m-		<div >[m
+[31m-			<p>Zerda</p>[m
+[31m-		</div>[m
+[31m-		<div >[m
+[31m-			<p>Lagopus</p>[m
+[31m-		</div>	[m
+[31m-	</body>	[m
+[31m-</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex2/ex2.css b/Week1/Day1/Ex2/ex2.css[m
+[1mdeleted file mode 100644[m
+[1mindex 63bbad8..0000000[m
+[1m--- a/Week1/Day1/Ex2/ex2.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,33 +0,0 @@[m
+[31m-/* Exercise 2 CSS*/[m
+[31m-[m
+[31m-div{[m
+[31m-	width: 385px;[m
+[31m-    /* height: 720px; */[m
+[31m-    background: #4285f4;[m
+[31m-    padding: 20px;[m
+[31m-}[m
+[31m-[m
+[31m-p {[m
+[31m-	width: 385px;[m
+[31m-    /* height: 110px; */[m
+[31m-    color: white;[m
+[31m-    text-align: center;[m
+[31m-    font-size: 30px;[m
+[31m-    margin: 0;[m
+[31m-    /* padding-top: 70px; */[m
+[31m-    line-height: 180px;[m
+[31m-}[m
+[31m-[m
+[31m-.n{[m
+[31m-	background: #e67676;	[m
+[31m-}[m
+[31m-[m
+[31m-.e{[m
+[31m-	background: #f2f062;[m
+[31m-}[m
+[31m-.s{[m
+[31m-	background: #a9e6e6;	[m
+[31m-}[m
+[31m-.w{[m
+[31m-	background: #7692e4;[m
+[31m-}[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex2/ex2.html b/Week1/Day1/Ex2/ex2.html[m
+[1mdeleted file mode 100644[m
+[1mindex 900c2cb..0000000[m
+[1m--- a/Week1/Day1/Ex2/ex2.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,27 +0,0 @@[m
+[31m-<!doctype html>[m
+[31m-[m
+[31m-<html>[m
+[31m-	<head>[m
+[31m-		<title>EX2</title>[m
+[31m-		<meta charset = "UTF-8">[m
+[31m-		<link rel ="stylesheet" href = "ex2.css" >[m
+[31m-	</head>[m
+[31m-	[m
+[31m-	<body>[m
+[31m-	[m
+[31m-		<div>[m
+[31m-			<p class = "n">North</p>		[m
+[31m-			<p class = "e">East</p>		[m
+[31m-			<p class = "s">South</p>[m
+[31m-			<p class = "w">West</p>[m
+[31m-		</div>[m
+[31m-		[m
+[31m-	[m
+[31m-	</body>[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex3/ex3.css b/Week1/Day1/Ex3/ex3.css[m
+[1mdeleted file mode 100644[m
+[1mindex 4ede8b5..0000000[m
+[1m--- a/Week1/Day1/Ex3/ex3.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,36 +0,0 @@[m
+[31m-/* Exercise 3 CSS*/[m
+[31m-[m
+[31m-div{[m
+[31m-	width: 300px;[m
+[31m-	height: 340px;[m
+[31m-	background: #4285f4;[m
+[31m-	margin: 5px;[m
+[31m-	padding:20px[m
+[31m-}[m
+[31m-[m
+[31m-p{[m
+[31m-	width:300px;[m
+[31m-	height: 120px;[m
+[31m-	color:white;[m
+[31m-	font-size: 25px;[m
+[31m-	margin:0px;[m
+[31m-	padding-top: 50px;[m
+[31m-	text-align:center;[m
+[31m-	/*line-height[m
+[31m-	width and height define */[m
+[31m-}[m
+[31m-[m
+[31m-.U1{[m
+[31m-	background-color: #e67676;[m
+[31m-}[m
+[31m-[m
+[31m-.U2{[m
+[31m-	background-color: #e67676;[m
+[31m-}[m
+[31m-[m
+[31m-.B1{[m
+[31m-	background-color: #a9e6e6;[m
+[31m-}[m
+[31m-.B2{[m
+[31m-	background-color: #a9e6e6;[m
+[31m-}[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex3/ex3.html b/Week1/Day1/Ex3/ex3.html[m
+[1mdeleted file mode 100644[m
+[1mindex 7558443..0000000[m
+[1m--- a/Week1/Day1/Ex3/ex3.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,24 +0,0 @@[m
+[31m-<!doctype = html>[m
+[31m-<html>[m
+[31m-	<head>[m
+[31m-		<title>EX3</title>[m
+[31m-		<meta charset = "UTF-8">[m
+[31m-		<link rel="stylesheet" href="ex3.css">[m
+[31m-[m
+[31m-	</head>[m
+[31m-	<body>[m
+[31m-		<div id = "1">[m
+[31m-			<p class = "U1">North</p>[m
+[31m-			<p class = "U2">North</p>[m
+[31m-		</div>[m
+[31m-		[m
+[31m-		<div id = "2">[m
+[31m-			<p class = "B1">North</p>[m
+[31m-			<p class = "B2">North</p>[m
+[31m-		</div>[m
+[31m-		[m
+[31m-		[m
+[31m-	</body>[m
+[31m-[m
+[31m-[m
+[31m-</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex4/ex4.css b/Week1/Day1/Ex4/ex4.css[m
+[1mdeleted file mode 100644[m
+[1mindex a306c60..0000000[m
+[1m--- a/Week1/Day1/Ex4/ex4.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,15 +0,0 @@[m
+[31m-/* Exercise 4 CSS*/[m
+[31m-h1{[m
+[31m-	color:#f8ab21;[m
+[31m-}[m
+[31m-[m
+[31m-p{[m
+[31m-	[m
+[31m-	color: #f8ab21;[m
+[31m-	text-transform: capitalize;[m
+[31m-	font-size:50px;[m
+[31m-}[m
+[31m-[m
+[31m-span{[m
+[31m-	text-transform: lowercase;[m
+[31m-}[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex4/ex4.html b/Week1/Day1/Ex4/ex4.html[m
+[1mdeleted file mode 100644[m
+[1mindex 74b1064..0000000[m
+[1m--- a/Week1/Day1/Ex4/ex4.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,31 +0,0 @@[m
+[31m-<!doctype html>[m
+[31m-<html>[m
+[31m-	<head>[m
+[31m-		<title>EX4</title>[m
+[31m-		<meta charset = "UTF-8">[m
+[31m-		<link rel="stylesheet" href="ex4.css">[m
+[31m-	</head>[m
+[31m-	[m
+[31m-	[m
+[31m-	[m
+[31m-	<body>[m
+[31m-		[m
+[31m-		<h1>  Code Example for Paragraph </h1>[m
+[31m-		[m
+[31m-		[m
+[31m-			<pre>  [m
+[31m-				&lt;p&gt;[m
+[31m-					this is a paragraph[m
+[31m-				&lt;/p&gt;[m
+[31m-			</pre>[m
+[31m-	</body>[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex5/ex5.css b/Week1/Day1/Ex5/ex5.css[m
+[1mdeleted file mode 100644[m
+[1mindex 588ebe0..0000000[m
+[1m--- a/Week1/Day1/Ex5/ex5.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,20 +0,0 @@[m
+[31m-/* Exercise 5 CSS*/[m
+[31m-[m
+[31m-body{[m
+[31m-	font-family: Times;[m
+[31m-}[m
+[31m-h1{[m
+[31m-	color:blue;[m
+[31m-}[m
+[31m-[m
+[31m-h2{[m
+[31m-	color:#f8ab21;[m
+[31m-}[m
+[31m-[m
+[31m-.blue{[m
+[31m-	color:blue;[m
+[31m-}[m
+[31m-[m
+[31m-.red{[m
+[31m-	color:red;[m
+[31m-}[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex5/ex5.html b/Week1/Day1/Ex5/ex5.html[m
+[1mdeleted file mode 100644[m
+[1mindex 6e1bdaa..0000000[m
+[1m--- a/Week1/Day1/Ex5/ex5.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,49 +0,0 @@[m
+[31m-<!doctype html>[m
+[31m-<html>[m
+[31m-	<head>[m
+[31m-		<title>EX5</title>[m
+[31m-		<meta charset = "UTF-8">[m
+[31m-		<link rel="stylesheet" href="ex5.css">[m
+[31m-	</head>[m
+[31m-	[m
+[31m-	[m
+[31m-	[m
+[31m-	<body>[m
+[31m-		<h1>Title</h1>[m
+[31m-		[m
+[31m-		<h2>Subtitle</h2>[m
+[31m-		[m
+[31m-		<p>Lorem ipsum dolor set</p>[m
+[31m-		[m
+[31m-		<h2>Food List</h2>[m
+[31m-<!--rewrite the html use raw class name  change the csss-->[m
+[31m-		<ul>[m
+[31m-			<li class = "blue">Meats</li>[m
+[31m-			<li class = "blue">Fruits[m
+[31m-				<ul>[m
+[31m-					<li class = "red">Apple</li>[m
+[31m-					<li>Pear</li>[m
+[31m-					<li>Melon</li>[m
+[31m-				</ul>[m
+[31m-				</li>[m
+[31m-			<li class = "blue">Vegetables[m
+[31m-				<ol>[m
+[31m-					<li>Onion</li>[m
+[31m-					<li>Potato</li>[m
+[31m-					<li>Carrot</li>[m
+[31m-				</ol>[m
+[31m-			</li>		[m
+[31m-		</ul>[m
+[31m-		[m
+[31m-		[m
+[31m-		[m
+[31m-		[m
+[31m-	[m
+[31m-	[m
+[31m-	[m
+[31m-	</body>[m
+[31m-	[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex6/ex6.css b/Week1/Day1/Ex6/ex6.css[m
+[1mdeleted file mode 100644[m
+[1mindex e462e80..0000000[m
+[1m--- a/Week1/Day1/Ex6/ex6.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,16 +0,0 @@[m
+[31m-/* Exercise 6 CSS*/[m
+[31m-[m
+[31m-h1 {[m
+[31m-    /*color: black8 ;*/[m
+[31m-}[m
+[31m-[m
+[31m-p {[m
+[31m-    border-left: 2px solid black;[m
+[31m-    margin-left: 10px;[m
+[31m-    padding-left: 10px;[m
+[31m-    width: 300px;[m
+[31m-}[m
+[31m-[m
+[31m-body{[m
+[31m-	font-family:Times;[m
+[31m-}[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex6/ex6.html b/Week1/Day1/Ex6/ex6.html[m
+[1mdeleted file mode 100644[m
+[1mindex 81cf53b..0000000[m
+[1m--- a/Week1/Day1/Ex6/ex6.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,33 +0,0 @@[m
+[31m-<!doctype = html>[m
+[31m-<html>[m
+[31m-	<head>[m
+[31m-		<title>EX6</title>[m
+[31m-		<meta charset = "UTF-8">[m
+[31m-		<link rel="stylesheet" href="ex6.css">[m
+[31m-[m
+[31m-	</head>[m
+[31m-	<body>[m
+[31m-	[m
+[31m-		<h1>Title</h1>[m
+[31m-		<p>[m
+[31m-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [m
+[31m-		</p>[m
+[31m-		<p>[m
+[31m-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. [m
+[31m-		</p>[m
+[31m-		<p>[m
+[31m-			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. [m
+[31m-		</p>[m
+[31m-		<p>[m
+[31m-			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[m
+[31m-		</p>[m
+[31m-    </body>[m
+[31m-[m
+[31m-</html>[m
+[31m-[m
+[31m-		[m
+[31m-		[m
+[31m-	</body>[m
+[31m-[m
+[31m-[m
+[31m-</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex7/ex7.css b/Week1/Day1/Ex7/ex7.css[m
+[1mdeleted file mode 100644[m
+[1mindex b09012f..0000000[m
+[1m--- a/Week1/Day1/Ex7/ex7.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,19 +0,0 @@[m
+[31m-/* Exercise 7 CSS*/[m
+[31m-[m
+[31m-.big{[m
+[31m-    color: blue;[m
+[31m-}[m
+[31m-[m
+[31m-.container div{[m
+[31m-    border: 1px solid green;[m
+[31m-    width: 300px;[m
+[31m-}[m
+[31m-[m
+[31m-div{[m
+[31m-    font-weight: bold;[m
+[31m-}[m
+[31m-[m
+[31m-p{[m
+[31m-    width: 300px;[m
+[31m-    background: yellow;[m
+[31m-}[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex7/ex7.html b/Week1/Day1/Ex7/ex7.html[m
+[1mdeleted file mode 100644[m
+[1mindex 49c07c6..0000000[m
+[1m--- a/Week1/Day1/Ex7/ex7.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,19 +0,0 @@[m
+[31m-<!doctype = html>[m
+[31m-<html>[m
+[31m-	<head>[m
+[31m-		<title>EX7</title>[m
+[31m-		<meta charset = "UTF-8">[m
+[31m-		<link rel="stylesheet" href="ex7.css">[m
+[31m-[m
+[31m-	</head>[m
+[31m-	<body>[m
+[31m-        <div class="container">[m
+[31m-            <div id="b325" class="asteroid">The King</div>[m
+[31m-            <div class="asteroid b326">The Conceited Man</div>[m
+[31m-          </div>[m
+[31m-          <p class="asteroid big">The Businessman</p>[m
+[31m-          <div class="asteroid b329 big">The Lamplighter</div>[m
+[31m-		[m
+[31m-    </body>[m
+[31m-[m
+[31m-</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex8/ex8.css b/Week1/Day1/Ex8/ex8.css[m
+[1mdeleted file mode 100644[m
+[1mindex a0c2790..0000000[m
+[1m--- a/Week1/Day1/Ex8/ex8.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,25 +0,0 @@[m
+[31m-/* Exercise 8 CSS*/[m
+[31m-[m
+[31m-h1,p{[m
+[31m-[m
+[31m-    font-family: 'Times New Roman', Times, serif;[m
+[31m-    margin-left: 20px;[m
+[31m-}[m
+[31m-[m
+[31m-input[type="fname"],input[type="lname"],[m
+[31m-input[type="email"],input[type="password"]{[m
+[31m-    display: block;[m
+[31m-    padding: 5px;[m
+[31m-    margin-bottom: 15px;[m
+[31m-    margin-left: 20px;[m
+[31m-}[m
+[31m-[m
+[31m-label[for="service"]{[m
+[31m-    display: inline-block;[m
+[31m-    margin-left: -15px;[m
+[31m-}[m
+[31m-[m
+[31m-input[type="button"]{[m
+[31m-    display: block;[m
+[31m-    margin-left: 20px;   [m
+[31m-}[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex8/ex8.html b/Week1/Day1/Ex8/ex8.html[m
+[1mdeleted file mode 100644[m
+[1mindex ce571a1..0000000[m
+[1m--- a/Week1/Day1/Ex8/ex8.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,47 +0,0 @@[m
+[31m-<!doctype = html>[m
+[31m-<html>[m
+[31m-	<head>[m
+[31m-		<title>EX8</title>[m
+[31m-		<meta charset = "UTF-8">[m
+[31m-		<link rel="stylesheet" href="ex8.css">[m
+[31m-[m
+[31m-	</head>[m
+[31m-	<body>[m
+[31m-        <header>[m
+[31m-            <h1>Registraion</h1>[m
+[31m-        </header>[m
+[31m-[m
+[31m-        <!-- Personal Info -->[m
+[31m-        <form action="/signup.php" method='put'>[m
+[31m-            <!-- Personal Info -->[m
+[31m-            <label for='a'>First name</label>[m
+[31m-            <!-- type should be text -->[m
+[31m-            <input type="fname" id='a' required>[m
+[31m-            <p>Last name</p>[m
+[31m-            <input type="lname"  required>[m
+[31m-            <p>Email</p>[m
+[31m-            <input type="email"  required>[m
+[31m-            <p>password</p>[m
+[31m-            <input type="password" required>[m
+[31m-            <p>Confirm password</p>[m
+[31m-            <input type="password" required>[m
+[31m-            <!-- Check box -->[m
+[31m-            <input type="checkbox" id="service">[m
+[31m-            <label for="service">[m
+[31m-                <p>I agree all statements in <a href="">terms of service</a></p>[m
+[31m-            </label>[m
+[31m-            <!-- Register button -->[m
+[31m-            <input type="submit" value="Register">[m
+[31m-           [m
+[31m-        </form>[m
+[31m-		[m
+[31m-    </body>[m
+[31m-[m
+[31m-</html>[m
+[31m-[m
+[31m-		[m
+[31m-		[m
+[31m-	</body>[m
+[31m-[m
+[31m-[m
+[31m-</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex9/ex9.css b/Week1/Day1/Ex9/ex9.css[m
+[1mdeleted file mode 100644[m
+[1mindex 36383b9..0000000[m
+[1m--- a/Week1/Day1/Ex9/ex9.css[m
+[1m+++ /dev/null[m
+[36m@@ -1,57 +0,0 @@[m
+[31m-/* Exercise 9 CSS*/[m
+[31m-#container{[m
+[31m-    width: 500px;[m
+[31m-    height: 640px;  [m
+[31m-    background-color: gray;[m
+[31m-  }[m
+[31m-[m
+[31m-  #header{[m
+[31m-      height:40px;[m
+[31m-      background: black;[m
+[31m-  }[m
+[31m-[m
+[31m-  #header p{[m
+[31m-      color: white;[m
+[31m-      word-spacing: 20px;[m
+[31m-      padding: 10px;[m
+[31m-  }[m
+[31m-[m
+[31m-  span{[m
+[31m-      word-spacing: 3px;[m
+[31m-  }[m
+[31m-[m
+[31m-  [m
+[31m-  #main{[m
+[31m-      height: 600px;[m
+[31m-      background: orangered;[m
+[31m-  }[m
+[31m-[m
+[31m-  h3.title{[m
+[31m-      color: black;[m
+[31m-      margin: 0;[m
+[31m-      clear: left;[m
+[31m-      padding-left: 30px;[m
+[31m-      padding-bottom: 10px;[m
+[31m-      padding-top: 30px;[m
+[31m-  }[m
+[31m-[m
+[31m-  h3.tip{[m
+[31m-      padding-left: 25px;[m
+[31m-      padding-top: 58px;[m
+[31m-  }[m
+[31m-[m
+[31m-[m
+[31m-  .button{[m
+[31m-      width: 104px;[m
+[31m-      height: 29px;[m
+[31m-      background: yellow;[m
+[31m-      text-align: center;[m
+[31m-      float: left;[m
+[31m-      margin: 7px;[m
+[31m-      padding: 3px;[m
+[31m-  }[m
+[31m-[m
+[31m-  #main p{[m
+[31m-      width: 210px;[m
+[31m-      padding-left:20px;[m
+[31m-  }[m
+\ No newline at end of file[m
+[1mdiff --git a/Week1/Day1/Ex9/ex9.html b/Week1/Day1/Ex9/ex9.html[m
+[1mdeleted file mode 100644[m
+[1mindex bf21e4b..0000000[m
+[1m--- a/Week1/Day1/Ex9/ex9.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,36 +0,0 @@[m
+[31m-<!doctype html>[m
+[31m-<html>[m
+[31m-    <head>[m
+[31m-        <title>EX9</title>[m
+[31m-        <meta charset="UTF-8">[m
+[31m-        <link rel="stylesheet" href="ex9.css">[m
+[31m-    [m
+[31m-[m
+[31m-    </head>[m
+[31m-[m
+[31m-    <body>[m
+[31m-        <div id="container">[m
+[31m-            <div id="header">[m
+[31m-                <p><strong><span>Awsome quiz</span></strong> mdn syllabus epam</p>[m
+[31m-            </div>[m
+[31m-            <div id="main">[m

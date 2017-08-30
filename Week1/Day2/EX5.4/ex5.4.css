@@ -1,0 +1,22 @@
+/* Exercise5.4 CSS*/
+.container{
+    width: 150px;
+    background:#ccc;
+    display: inline-block;
+}
+
+div>div {
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    color: white;
+    float: left;
+}
+
+div:nth-child(2n+1){
+    background-color: #666;
+}
+
+div:nth-child(2n+2){
+    background-color: #999;
+}

@@ -1,0 +1,20 @@
+/* wiki style CSS*/
+header{
+    height: 80px;
+    width: 1394px;
+    background:white;
+}
+
+nav{
+    height: 80px;
+    width:1173px;
+    float: left;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+aside{
+    float: left;
+}

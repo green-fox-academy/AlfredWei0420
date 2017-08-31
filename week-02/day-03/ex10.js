@@ -1,7 +1,7 @@
 'use strict';
 
 var lineCount = 6;
-
+var Lspace = 0;
 
 // Write a program that draws a
 // square like this:
@@ -21,15 +21,13 @@ function diagonal(lines){
     var space = ' ';
     for (var i = 1; i <= lines; i++) {
         if (i===1 || i===lines) {
-            for(var j = 1;j<=lines;j++){
-                sArray=sArray.concat(symbol);
-            }
             console.log(symbol.repeat(lines));
         }else{
-            console.log(symbol+space.repeat(lines-2)+symbol);
+            console.log(symbol+space.repeat(Lspace)+symbol+space.repeat(lines-3-Lspace)+symbol);
+            Lspace=Lspace+1;
         }        
     }
 }
 
 diagonal(lineCount);
-//not finished
+diagonal(8);

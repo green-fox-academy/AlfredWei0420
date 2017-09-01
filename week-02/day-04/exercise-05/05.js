@@ -1,7 +1,3 @@
-'use strict';
-// Join the two array by matching one girl with one boy in the order array
-// Exepected output: ["Eve", "Joe", "Ashley", "Fred"...]
-
 var girls = ["Eve","Ashley","Bözsi","Kat","Jane"];
 var boys = ["Joe","Fred","Béla","Todd","Neef","Jeff"];
 var order = [];
@@ -15,9 +11,11 @@ if(girls.length<boys.length){
         order.push(girls[i]);
         order.push(boys[i]);
 }
-    order=order.filter(order[i]==undefined);
 }
+order=order.slice(0,order.length-1)+
+order.slice(order.length-1,order.length);
 
+order = order.split(',');
 console.log(order);
 
 //need modify filter

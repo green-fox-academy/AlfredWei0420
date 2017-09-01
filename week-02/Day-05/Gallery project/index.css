@@ -1,0 +1,31 @@
+.container{
+    background-color:Green;
+    width: 1480px;
+    margin: auto;
+   /*position: absolute;
+    top: 100px;*/
+}
+
+.photoViewer{
+    background-color: red;
+    width: 1280px;
+    height: 720px;
+    margin: auto;
+}
+
+.thumbnails{
+    background-color:blue;
+    width:640px;
+    height: 100px;
+    margin: auto;
+}
+
+.intro{
+    background-color: black;
+    height: 200px;
+    opacity: 0.5;
+    position: relative;
+    bottom: 478px;/*need to modify later*/
+}
+
+

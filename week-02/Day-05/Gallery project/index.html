@@ -8,16 +8,24 @@
 <body>
   <div class="container">
       <div class="photoViewer">
+          <img src="./image/1.jpg" class="photos" alt="">
           <button class="Button left"></button>
           <button class="Button right"></button>
           <div class="intro">
-              <h1>Story overview</h1>
-              <p>A photo with story</p>
+              <h1>A Fox Story</h1>
+              <p>I`m a Fox with stories</p>
           </div>
       </div>
-      <div class="thumbnails"></div>
+      <div class="thumbnails" onclick="imgClick(event)">
+          <img src="./image/1.jpg" class="pic" alt="">
+          <img src="./image/2.jpg" class="pic" alt="">
+          <img src="./image/3.jpg" class="pic" alt="">
+          <img src="./image/4.jpg" class="pic" alt="">
+          <img src="./image/5.jpg" class="pic" alt="">
+          <img src="./image/6.jpg" class="pic" alt="">
+      </div>
   </div>
 
-  <script src="events-2.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

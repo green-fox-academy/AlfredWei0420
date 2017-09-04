@@ -1,31 +1,77 @@
+body{
+    background:linear-gradient(to bottom, white, grey);
+}
 .container{
-    background-color:Green;
-    width: 1480px;
+    width: 1280px;
     margin: auto;
+    margin-top:40px;
    /*position: absolute;
     top: 100px;*/
 }
 
 .photoViewer{
-    background-color: red;
-    width: 1280px;
-    height: 720px;
+    /*background-color: red;*/
+    width: 1128px;
+    height: 432px;
     margin: auto;
+    
+}
+
+.photoViewer img{
+    width: 968px;
+    height: 432px;
 }
 
 .thumbnails{
-    background-color:blue;
-    width:640px;
+    width:800px;
     height: 100px;
     margin: auto;
+    position: relative;
+    top: 10px;
 }
+
+.thumbnails img{
+    width: 100px;
+    height: 80px;
+    padding: 12px;
+    display: inline-block;
+}
+
 
 .intro{
+    float: left;
     background-color: black;
     height: 200px;
+    width: 968px;
     opacity: 0.5;
-    position: relative;
-    bottom: 478px;/*need to modify later*/
+    float: left;
+    position: absolute;
+    top: 271px;
+    left: 199px;
 }
 
+h1{
+    color: white;
+}
+
+p{
+    color:white;
+    font-size: 20px;
+}
+
+button {
+    width: 80px;
+    height: 432px;
+}
+
+button.left{
+    background: url('./image/arrow.svg') no-repeat center;
+    float: left;
+}
+
+button.right{
+    background: url('./image/arrow.svg') no-repeat center;
+    float: right;
+    transform: rotate(180deg);
+}
 

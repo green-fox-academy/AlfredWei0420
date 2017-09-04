@@ -25,9 +25,9 @@ var car ={
 
 var station={
     petrolStorage:3000,
-    provide: function provide(refill) {
-        this.petrolStorage -= refill;
-        //how to call refill?
+    provide: function provide(car) {
+        this.petrolStorage -= car.refill();
+        //****how to call refill?
     }
 };
 

@@ -17,6 +17,7 @@ body{
     
 }
 
+
 .photoViewer img{
     width: 968px;
     height: 432px;
@@ -24,7 +25,7 @@ body{
 
 .thumbnails{
     width:800px;
-    height: 100px;
+    height: 200px;
     margin: auto;
     position: relative;
     top: 10px;
@@ -35,6 +36,7 @@ body{
     height: 80px;
     padding: 12px;
     display: inline-block;
+    cursor: pointer;
 }
 
 
@@ -59,19 +61,30 @@ p{
     font-size: 20px;
 }
 
-button {
+.buttonL {
     width: 80px;
     height: 432px;
-}
-
-button.left{
-    background: url('./image/arrow.svg') no-repeat center;
+    background-color: white;
     float: left;
 }
 
-button.right{
-    background: url('./image/arrow.svg') no-repeat center;
+.buttonR {
+    width: 80px;
+    height: 432px;
+    background-color: white;
     float: right;
+}
+
+.left{
+    width: 80px;
+    height: 432px;
+    background: url('./image/arrow.svg') no-repeat center;    
+}
+
+.right{
+    width: 80px;
+    height: 432px;
+    background: url('./image/arrow.svg') no-repeat center;
     transform: rotate(180deg);
 }
 

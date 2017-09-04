@@ -1,4 +1,5 @@
 'use strict';
+
 var imgLinks = ["./image/1.jpg","./image/2.jpg","./image/3.jpg",
 "./image/4.jpg","./image/5.jpg","./image/6.jpg"]
 var h1Text=["A Fox Story","A Cat Story","A Lion Story","A Mouse Story","An Old driver","A Wolf Story" ]
@@ -51,7 +52,7 @@ function leftClick(){
 function imgClick(event){
     for (var i = 0; i < picClick.length; i++) {
         picClick[i].onmouseover = function() {
-            this.style.cursor = "hand";
+            this.style.cursor='hand';
             //this.style.border = 3px "blue";
         }   
     }

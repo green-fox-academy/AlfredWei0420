@@ -48,10 +48,10 @@ var PirateHorde = function(pirates){
   this.getTheWoodenLegNames = function(){
     var woodenName = [];
     this.pirates.forEach(function(e){
-      if(e.hasWoodenLeg=='true'){
+      if(e.hasWoodenLeg){
         woodenName.push(e.hasWoodenLeg);
       };
-      return woodenName;
+      return woodenName.join(",");
     })
   };
 };

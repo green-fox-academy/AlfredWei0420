@@ -1,23 +1,34 @@
+'use strict';
 
-const xhr = new XMLHttpRequest();
-//var data;
+const MESSAGE_LIST = document.querySelector('ul');
+const API_BASE_URL = 'https://wakeful-vision.glitch.me/api/';
+const MESSAGES = 'messages';
 
-xhr.onreadystatechange = function(){
-    console.log('readyState changed');
-    if(xhr.readyState ===XMLHttpRequest.DONE && xhr.status === 200){
-        var data = JSON.parse(xhr.response).messages;
-        console.log(data);
-    }
+fetch(`${API_BASE_URL}${MESSAGES}`)
+.then(parseResponse)
+.then(collectMessages)
+.then(displayMessages)
+
+function parseResponse(response) {
+  //return response.json();
+  console.log(response.json());
 }
 
-xhr.open('GET',"https://wakeful-vision.glitch.me/api/messages/");
-xhr.send(null);
-
-var urlObject={
-    path:"https://wakeful-vision.glitch.me/",
-    
+function collectMessages(data) {
+  return data.messages.map(function (message) {
+    return message.message;
+  });
 }
 
+function createMessage(message) {
+  const li = document.createElement('li');
+  li.textContent = message;
+  return li
+}
 
-
-console.log(xhr);
+function displayMessages(messages) {
+  messages.forEach(function (message) {
+    const element = createMessage(message);
+    MESSAGE_LIST.appendChild(element);
+  });
+}

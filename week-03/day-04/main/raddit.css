@@ -1,0 +1,107 @@
+body{
+    margin-top:-8px;
+}
+
+header{
+    height: 15px;
+    width: 100%;
+    display: inline-block;
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #5f99cf;
+    font-size: 5px;
+    margin-left:-5px;
+}
+
+header>p{
+    float: right;
+    position: relative;
+    top: -10px;
+}
+
+a{
+    text-decoration:none;
+}
+
+.news{
+    height: 70px;
+    width: auto;
+    position: relative;
+}
+.number{
+    color:#d1cdca;
+    font-size: 20px;
+    float: left;
+    position: absolute;
+    top: 19px;
+    left: 15px;
+}
+
+.vote{
+    width: 45px;
+    color: #b7b7b7;
+    font-size: 15px;
+    float: left;
+    text-align: center;
+    position: relative;
+    top: 23px;
+    left: 42px;
+}
+
+.up{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 3px;
+    float: left;
+    background: url('./arrow/upvote.png') no-repeat center; 
+}
+
+.down{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 40px;
+    left: -27px;
+    float: left;
+    background: url('./arrow/downvote.png') no-repeat center;
+}
+
+.text{
+    color: blue;
+    font-size: 28px;
+    float: left;
+    position: absolute;
+    top: -22px;
+    left: 94px;
+    float: left;
+}
+
+
+
+.time{
+    clear: both;
+    color: #9eb2cd;
+    font-size: 8px;
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+.modify{
+    clear: both;
+    color: #8f9194;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+    left: 102px;
+}
+.remove{
+    clear: both;
+    color: #8f9194;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    top: -30px;
+    left: 160px;
+}

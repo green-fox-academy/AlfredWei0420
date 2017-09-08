@@ -1,0 +1,85 @@
+body{
+    margin-top:-5px;
+}
+
+header{
+    height: 20px;
+    width: 100%;
+    display: inline-block;
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #5f99cf;
+    font-size: 5px;
+    margin-left:-5px;
+}
+
+a{
+    text-decoration:none;
+}
+
+#container>h1{
+    border-bottom: 8px solid #5f99cf;
+    padding: 5px;
+    width: 530px;
+}
+#container>h1>span{
+    color: #7599ca;
+}
+
+.url{
+    width: 530px;
+    height: 80px;
+    margin-top: 50px;
+    background-color: #cee3f8;
+}
+
+
+.url>h2{
+    margin-left:10px;
+}
+
+.url>input{
+    margin-left:10px;
+    width: 480px;
+    height: 20px;
+    position: relative;
+    top:-20px;
+}
+
+.title{
+    width: 530px;
+    height: 120px;
+    margin-top: 20px;
+    background-color: #cee3f8;
+}
+
+
+.title>h2{
+    margin-left:10px;
+}
+h2>span{
+    color: red;
+}
+.title>textarea{
+    margin-left:10px;
+    width: 480px;
+    height: 65px;
+    position: relative;
+    top:-20px;
+    resize: none;
+}
+
+.options{
+    width: 530px;
+    height: 80px;
+    margin-top: 20px;
+    background-color: #cee3f8;
+}
+
+.options>h2{
+    margin-left:10px;
+}
+
+.ckBox{
+    position: relative;
+    top:-6px;
+}

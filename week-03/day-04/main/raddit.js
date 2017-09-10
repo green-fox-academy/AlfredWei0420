@@ -6,11 +6,13 @@ const API_BASE_URL = 'https://time-radish.glitch.me/posts';
 var index = 0;
 var number = 1;
 
+window.addEventListener('load', function () {
+    fetch(API_BASE_URL)
+    .then(parseResponse)
+    .then(collectPost)
+    .then(displayTitle) 
+  })
 
-fetch(API_BASE_URL)
-.then(parseResponse)
-.then(collectPost)
-.then(displayTitle)
 
 function parseResponse(response){
     //console.log(response.json());
@@ -105,7 +107,7 @@ function createTitle(title){
 function createTime(timeStamp,owner){
     const timeClass = document.createElement("p");
     timeClass.setAttribute("class", "time");
-    timeClass.innerHTML="submitted"+timeStamp+"ago"+owner;
+    timeClass.innerHTML="submitted"+" "+timeStamp+" "+"ago"+" "+"by"+" "+owner;
     timeClass.style.color = "#9eb2cd";
     timeClass.style.position = "relative";
     timeClass.style.top = "8px";
@@ -140,8 +142,6 @@ function createRemove(){
     removeClass.style.left = "160px"
     return removeClass;
 }
-
-
 function displayTitle(infoPosts) {
     console.log(infoPosts);
     infoPosts.forEach(function (e) {
@@ -169,7 +169,6 @@ function displayTitle(infoPosts) {
         number++;
       //console.log(text);
       //console NEWS_LIST[0].appendChild(text).log(NEWS_LIST);
-      
     });
   }
 

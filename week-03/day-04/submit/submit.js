@@ -15,6 +15,7 @@ function submitPosts() {
       title:message.value,
       score:1000
    }
+
    fetch(API_BASE_URL, {
     method: 'post',
     headers: {

@@ -1,0 +1,19 @@
+ul{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: yellow;
+    -webkit-padding-start: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+li{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    list-style: none;
+    margin-left: 10px;
+}

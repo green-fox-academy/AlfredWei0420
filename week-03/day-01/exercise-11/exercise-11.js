@@ -33,14 +33,15 @@ var CarStore = function(cars){
     return sum;
   };
   this.getOldestCarType = function(){
-    var year = new year();
-    year = this.cars.year;
-    console.log(year);
-    /*this.cars.forEach(function(e,i){
-      if(year[0].year==e.year){
-      return this.car[i].type;
-     };
-    });*/
+    var oldYear = this.cars[0].year;
+    var oldType;
+    this.cars.forEach(function(e){
+      if (e.year<oldYear) {
+        oldYear = e.year;
+        oldType = e.type;
+      }
+    });
+    return oldType
   };
  this.deleteCarByType = function(carType){
    /*this.cars.forEach(function(e,i){

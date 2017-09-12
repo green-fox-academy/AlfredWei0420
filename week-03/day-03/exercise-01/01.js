@@ -25,27 +25,25 @@ function thumbnailsDisplay(data) {
     pic.style.top = "10%";
     picture.appendChild(pic);
     var count = 1;
-    var img = data.map(function(e){
+    //map will return the value 
+    var img = data.forEach(function(e) {
         img = document.createElement("img");
         img.setAttribute("src", e.images.downsized_still.url);
+        img.setAttribute("data-large-url", e.images.downsized_large.url);
         img.setAttribute("id", e.id);
         img.setAttribute("height", 100);
         img.setAttribute("width",100);
         thumbnails.appendChild(img);
         //console.log(img);
-    })
-        thumbnails.addEventListener('click',function(event) {
-            data.forEach(function(e) {
-                if(event.target.id===e.id && count%2===0){
-                    pic.setAttribute("src", e.images.downsized_large.url);
-                    console.log(e.id);
-                    count++;
-                }else if (event.target.id===e.id && count%2!==0) {
-                    pic.setAttribute("src", e.images.downsized_still.url);
-                    //console.log(e.id);
-                    count++;
-                }
-            }, this);            
-            console.log(count);
-        });
+    });
+    thumbnails.addEventListener('click', function(event) {
+            if(count % 2 === 0) {
+                pic.src = event.target.getAttribute('data-large-url');
+                count++;
+            } else {
+                pic.src = event.target.src;
+                //console.log(e.id);
+                count++;
+            }
+    });
 }

@@ -1,0 +1,46 @@
+.container{
+    width: 800px;
+    height: 600px;
+    display: flex;
+    background-color: #333333;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.diamond{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    transform: rotateZ(45deg);
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    border:3px solid #ff6347;
+    position: relative;
+    top: 0px;
+    left: -103px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.square:hover{
+    cursor: pointer;
+    transform: rotateZ(45deg);
+}
+
+p{
+    font-weight: bold;
+    position: relative;
+    top: 24px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.square:hover>p{
+    transform: rotateZ(-45deg);
+    color: #ff6347;
+}
+

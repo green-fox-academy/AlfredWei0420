@@ -35,24 +35,25 @@ var PirateHorde = function(pirates){
     return sum;
   };
   this.getLongestName = function () {
-    this.pirates.forEach(function (e,i) {
-      var name = this.pirate[i].name;
-      var namelength = name.length;
-      var x = 0;
-      if(name.length>x){
-        x=length;
+   var nameLength = this.pirates[0].name.length;
+   var longName;
+   this.pirates.forEach(function (e,i) {
+      if (e.name.length > nameLength) {
+        nameLength = e.name.length;
+        longName = e.name;
       };
-      return name;
     });
+    return longName;
   };
-  this.getTheWoodenLegNames = function(){
+
+  this.getTheWoodenLegNames = function() {
     var woodenName = [];
-    this.pirates.forEach(function(e){
-      if(e.hasWoodenLeg){
-        woodenName.push(e.hasWoodenLeg);
+    this.pirates.forEach(function(e) {
+      if (e.hasWoodenLeg) {
+        woodenName.push(e.name);
       };
-      return woodenName.join(",");
-    })
+    });
+    return woodenName.join(",");
   };
 };
 
@@ -61,5 +62,5 @@ var pirateHorde = new PirateHorde(pirates);
 pirateHorde.addPirate('Greg', 6, true);
 console.log(pirates);
 console.log(pirateHorde.getSumGold()); // 25
-//console.log(pirateHorde.getLongestName()); // 'Steve'
+console.log(pirateHorde.getLongestName()); // 'Steve'
 console.log(pirateHorde.getTheWoodenLegNames()); // ['Jack', 'Olaf', 'Steve', 'Greg']

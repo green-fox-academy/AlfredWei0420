@@ -20,4 +20,28 @@ app.post('/post', jsonParser,function(req,res){
     mdb.posting(res);
 })
 
+app.put("/posts/:id/upvote",jsonParser,function(req,res){
+    var getId = parseInt(req.params.id);
+    console.log(getId);
+    mdb.upvote(res,getId);
+})
+
+app.put("/posts/:id/downvote",jsonParser,function(req,res){
+    var getId = parseInt(req.params.id);
+    console.log(getId);
+    mdb.downvote(res,getId);
+})
+
+app.delete("/posts/:id",jsonParser,function(req,res){
+    var getId = parseInt(req.params.id);
+    console.log(getId);
+    mdb.delete(res,getId);
+})
+
+app.put("/posts/:id",jsonParser,function(req,res){
+    var getId = parseInt(req.params.id);
+    console.log(getId);
+    mdb.modify(res,getId);
+})
+
 app.listen(8088);

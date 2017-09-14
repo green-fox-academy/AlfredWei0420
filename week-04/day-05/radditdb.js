@@ -76,11 +76,69 @@ exports.posting = function (res) {
     })
 }
 
-exports.upvote = function(res) {
+exports.upvote = function(res, getId) {
     MongoClient.connect(url, function (err, db){
         if (err) {
             console.log('Unable to connect to the MongoDB server. Error:', err);
         }
         var collection  = db.collection("list");
+        collection.find({"id":getId}).toArray(function(err,obj){
+            var score = obj[0].score + 1;
+            collection.update({'id':getId},{$set:{'score':score}});
+            db.close();
+            });
+        collection.find({"id":getId},{_id:0}).toArray(function(err,obj){
+            res.send(obj);
+            });
+    })
+}
+
+exports.downvote = function(res, getId) {
+    MongoClient.connect(url, function (err, db){
+        if (err) {
+            console.log('Unable to connect to the MongoDB server. Error:', err);
+        }
+        var collection  = db.collection("list");
+        collection.find({"id":getId}).toArray(function(err,obj){
+            var score = obj[0].score - 1;
+            collection.update({'id':getId},{$set:{'score':score}});
+            db.close();
+            });
+        collection.find({"id":getId},{_id:0}).toArray(function(err,obj){
+            res.send(obj);
+            });
+    })
+}
+
+exports.delete = function(res,getId){
+    MongoClient.connect(url, function (err, db){
+        if (err) {
+            console.log('Unable to connect to the MongoDB server. Error:', err);
+        }
+        var collection  = db.collection("list");
+        //collection.find({"id":getId}).toArray(function(err,obj){
+        collection.remove({'id':getId});
+            
+            //});
+        collection.find({},{_id:0}).toArray(function(err,obj){
+            res.send(obj);
+            });
+        db.close();
+    })
+}
+
+exports.modify = function(res,getId){
+    MongoClient.connect(url, function (err, db){
+        if (err) {
+            console.log('Unable to connect to the MongoDB server. Error:', err);
+        }
+        var collection  = db.collection("list");
+        collection.find({"id":getId}).toArray(function(err,obj){
+            collection.update({'id':getId},{$set:{'title':"AAA"}});
+            db.close();
+            });
+        collection.find({"id":getId},{_id:0}).toArray(function(err,obj){
+            res.send(obj);
+            });
     })
 }

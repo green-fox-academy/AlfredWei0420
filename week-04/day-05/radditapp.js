@@ -13,12 +13,11 @@ app.get('/hello', function(req, res) {
 });
 
 app.get('/get', function(req,res){
-    mdb.listing();
+    mdb.listing(res);
 })
 
-app.post('/post',function(req,res){
-    
+app.post('/post', jsonParser,function(req,res){
+    mdb.posting(res);
 })
-
 
 app.listen(8088);

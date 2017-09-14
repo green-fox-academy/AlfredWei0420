@@ -38,13 +38,13 @@ MongoClient.connect(url, function (err, db) {
 });
 // }
 
-function listing() {
+exports.listing = function (res) {
     MongoClient.connect(url, function (err, db) {
         if (err) {
             console.log('Unable to connect to the MongoDB server. Error:', err);
         }
         var collection  = db.collection("list")
-        collection.find().toArray(function(err,obj){
+        collection.find({},{_id:0}).toArray(function(err,obj){
         res.send(obj);
         });
       db.close();
@@ -57,11 +57,11 @@ function listing() {
     "href": "http://9gag.com",
     "timestamp": 14943459525,
     "score": 791,
-    "owner": Chase,
+    "owner": "Chase",
     "vote": 1
 }
   
-function post(){
+exports.posting = function (res) {
     MongoClient.connect(url, function (err, db){
         if (err) {
             console.log('Unable to connect to the MongoDB server. Error:', err);
@@ -69,8 +69,18 @@ function post(){
         var collection  = db.collection("list");
         collection.insert(newData);
         collection.find().toArray(function(err,obj){
+            console.log(res);
             res.send(obj);
             });
         db.close();
+    })
+}
+
+exports.upvote = function(res) {
+    MongoClient.connect(url, function (err, db){
+        if (err) {
+            console.log('Unable to connect to the MongoDB server. Error:', err);
+        }
+        var collection  = db.collection("list");
     })
 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Reddit</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/edit-post.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="./index.html">main</a>
+                <h1>create new post</h1>
+            </nav>
+            <div class="authentication-info">
+                logged in as <span class="username">ikarasz</span>
+            </div>
+        </header>
+        <main>
+            <form id="add-post">
+                <fieldset>
+                    <legend>
+                        Submit to <a href="./index.html">the page</a>
+                    </legend>
+                    <p class="form-description">
+                        The meaning of this bloc is show off your CSS skills. So this is some dummy useless text
+                    </p>
+                    <section>
+                        <label for="url">url</label>
+                        <input type="url" name="url" id="url"/>
+                    </section>
+                    <section>
+                        <label class="required" for="post-title">title</label>
+                        <textarea required id="post-title" name="title"></textarea>
+                    </section>
+                    <section>
+                        <span>options</span>
+                        <input type="checkbox" name="is-anonymous" id="is-anonymous" />
+                        <label for="is-anonymous">post as anonymous</label>
+                    </section>
+                </fieldset>
+                <p>
+                    * required
+                </p>
+                <input type="submit" value="submit" />
+            </form>
+        </main>
+        <script type="text/javascript" src="js/RedditAPI.js"></script>
+        <script type="text/javascript" src="js/PostBuilder.js"></script>
+        <script type="text/javascript" src="js/RedditUI.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

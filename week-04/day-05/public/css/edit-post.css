@@ -1,0 +1,69 @@
+form {
+    width: 450px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    padding-bottom: .5rem;
+    border-bottom: .2rem solid lightblue;
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    font-size: 1.125rem;
+    width: 100%;
+}
+
+form > p,
+.form-description {
+    font-size: .825rem;
+}
+
+.form-description {
+    background-color: palegoldenrod;
+    border: 1px solid gold;
+    padding: .5rem;
+}
+
+form > p,
+fieldset > section {
+    margin: .5rem 0;
+}
+
+fieldset > section {
+    background-color: lightblue;
+    padding: .5rem;
+    border-radius: 5px
+}
+
+label:first-child,
+fieldset > section > span:first-child {
+    display: block;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+input[type="url"],
+textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .25rem;
+}
+
+textarea {
+    height: 3rem;
+    resize: none;
+}
+
+input[type="submit"] {
+    padding: .25rem .5rem;
+}
+
+.required::before {
+    content: '*';
+    color: red;
+    font-weight: normal;
+}

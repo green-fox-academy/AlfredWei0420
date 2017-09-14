@@ -1,7 +1,7 @@
 'use strict';
 
 const NEWS_CONTAINER = document.getElementById("container");
-const API_BASE_URL = 'http://localhost:8088/get';
+const API_BASE_URL = 'http://localhost:8088/posts';
 //const TITLE = 'messages';
 var index = 0;
 var number = 1;

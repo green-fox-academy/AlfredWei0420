@@ -12,11 +12,11 @@ app.get('/hello', function(req, res) {
     res.send("hello") ;
 });
 
-app.get('/get', function(req,res){
+app.get('/posts', function(req,res){
     mdb.listing(res);
 })
 
-app.post('/post', jsonParser,function(req,res){
+app.post('/posts', jsonParser,function(req,res){
     mdb.posting(res);
 })
 

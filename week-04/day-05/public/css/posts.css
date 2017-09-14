@@ -1,0 +1,84 @@
+.post {
+    color: #bbb;
+    margin-bottom: 1rem;
+}
+
+.post::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.post > span,
+.vote-info,
+.post-info {
+    display: inline-block;
+    float: left;
+    margin-right: 1rem;
+}
+
+.post > span {
+    line-height: 60px;
+    font-size: 1.25rem;
+}
+
+.post button {
+    border: none;
+    background-color: transparent;
+}
+
+.vote-counter {
+    display: block;
+    line-height: 20px;
+    font-size: .825rem;
+    width: 30px;
+    text-align: center;
+}
+
+button[data-action="upvote"],
+button[data-action="downvote"],
+.vote-counter {
+    height: 20px;
+}
+
+.vote-info > button {
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 75%;
+}
+
+button[data-action="upvote"] {
+    background-image: url(../images/upvote.png);
+}
+
+button[data-action="upvote"]:disabled {
+    background-image: url(../images/upvoted.png);
+}
+
+button[data-action="downvote"] {
+    background-image: url(../images/downvote.png);
+}
+
+button[data-action="downvote"]:disabled {
+    background-image: url(../images/downvoted.png);
+}
+
+.post-info > h2 {
+    line-height: 26px;
+    font-size: 1.25em;
+}
+
+.post-info > p,
+.post-info > .post-actions-container {
+    line-height: 17px;
+    font-size: .75rem;
+}
+
+.post-actions-container > a,
+.post-actions-container > button {
+    font-weight: bold;
+    color: inherit;
+    margin-right: .5rem;
+}

@@ -106,6 +106,7 @@ function RedditUI() {
      * @returns {undefined}
      */
     this.renderPosts = function (posts) {
+        console.log('posts: ', posts);
         posts
                 .map(setDefaultValuesForPost)
                 .map(setElapsedTimeForPost)

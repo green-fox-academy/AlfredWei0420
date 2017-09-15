@@ -45,31 +45,31 @@ exports.listing = function (res) {
         }
         var collection  = db.collection("list")
         collection.find({},{_id:0}).toArray(function(err,obj){
-        res.send(obj);
+        console.log(obj);
+        res.send({"posts":obj});
         });
-      db.close();
+        db.close();
     });
   }
 
-  var newData = {
-	"id": 55,
-    "title": "FXXX",
-    "href": "http://9gag.com",
-    "timestamp": 14943459525,
-    "score": 791,
-    "owner": "Chase",
-    "vote": 1
-}
+//   var newData = {
+// 	"id": 55,
+//     "title": "AAA",
+//     "href": "http://9gag.com",
+//     "timestamp": 14943459525,
+//     "score": 791,
+//     "owner": "AAA",
+//     "vote": 1
+// }
   
-exports.posting = function (res) {
+exports.posting = function (res,body) {
     MongoClient.connect(url, function (err, db){
         if (err) {
             console.log('Unable to connect to the MongoDB server. Error:', err);
         }
         var collection  = db.collection("list");
-        collection.insert(newData);
+        collection.insert(body);
         collection.find().toArray(function(err,obj){
-            console.log(res);
             res.send(obj);
             });
         db.close();
@@ -85,10 +85,10 @@ exports.upvote = function(res, getId) {
         collection.find({"id":getId}).toArray(function(err,obj){
             var score = obj[0].score + 1;
             collection.update({'id':getId},{$set:{'score':score}});
-            db.close();
             });
-        collection.find({"id":getId},{_id:0}).toArray(function(err,obj){
-            res.send(obj);
+        collection.find({"id":getId}).toArray(function(err,obj){
+            res.send(obj[0]);
+            db.close();
             });
     })
 }
@@ -102,10 +102,10 @@ exports.downvote = function(res, getId) {
         collection.find({"id":getId}).toArray(function(err,obj){
             var score = obj[0].score - 1;
             collection.update({'id':getId},{$set:{'score':score}});
-            db.close();
             });
-        collection.find({"id":getId},{_id:0}).toArray(function(err,obj){
-            res.send(obj);
+        collection.find({"id":getId}).toArray(function(err,obj){
+            res.send(obj[0]);
+            db.close();
             });
     })
 }
@@ -120,25 +120,26 @@ exports.delete = function(res,getId){
         collection.remove({'id':getId});
             
             //});
-        collection.find({},{_id:0}).toArray(function(err,obj){
+        collection.find().toArray(function(err,obj){
             res.send(obj);
-            });
+         }); //show results
         db.close();
     })
 }
 
-exports.modify = function(res,getId){
+exports.modify = function(res,getId,body){
     MongoClient.connect(url, function (err, db){
         if (err) {
             console.log('Unable to connect to the MongoDB server. Error:', err);
         }
         var collection  = db.collection("list");
         collection.find({"id":getId}).toArray(function(err,obj){
-            collection.update({'id':getId},{$set:{'title':"AAA"}});
-            db.close();
+            collection.update({'id':getId},{$set:{'title':body.title}});
+            collection.update({'id':getId},{$set:{'href':body.href}});
             });
-        collection.find({"id":getId},{_id:0}).toArray(function(err,obj){
+        collection.find({"id":getId}).toArray(function(err,obj){
             res.send(obj);
+            db.close();
             });
     })
 }

@@ -10,6 +10,7 @@ function RedditAPI(hostname) {
         var xhr = new XMLHttpRequest();
         xhr.addEventListener('readystatechange', function () {
             if (xhr.readyState === XMLHttpRequest.DONE) {
+                console.log(xhr.response);
                 callback(xhr);
             }
         });

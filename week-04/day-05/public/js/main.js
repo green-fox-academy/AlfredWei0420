@@ -9,7 +9,7 @@
      *
      * @var {string}
      */
-    REDDIT_HOST = 'https://time-radish.glitch.me';
+    REDDIT_HOST = 'http://localhost:8088';
 
     /**
      *
@@ -31,6 +31,7 @@
      */
     function onFetchPostsResponse(xhr) {
         if (xhr.status === 200) {
+            console.log('onFetchPostsResponse', xhr);
             redditUI.renderPosts(JSON.parse(xhr.responseText).posts);
         } else {
             //error handling

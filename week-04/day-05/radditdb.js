@@ -51,16 +51,6 @@ exports.listing = function (res) {
         db.close();
     });
   }
-
-//   var newData = {
-// 	"id": 55,
-//     "title": "AAA",
-//     "href": "http://9gag.com",
-//     "timestamp": 14943459525,
-//     "score": 791,
-//     "owner": "AAA",
-//     "vote": 1
-// }
   
 exports.posting = function (res,body) {
     MongoClient.connect(url, function (err, db){
@@ -133,12 +123,12 @@ exports.modify = function(res,getId,body){
             console.log('Unable to connect to the MongoDB server. Error:', err);
         }
         var collection  = db.collection("list");
-        collection.find({"id":getId}).toArray(function(err,obj){
+        //collection.find({"id":getId}).toArray(function(err,obj){
             collection.update({'id':getId},{$set:{'title':body.title}});
             collection.update({'id':getId},{$set:{'href':body.href}});
-            });
+        //    });
         collection.find({"id":getId}).toArray(function(err,obj){
-            res.send(obj);
+            res.send(obj[0]);
             db.close();
             });
     })

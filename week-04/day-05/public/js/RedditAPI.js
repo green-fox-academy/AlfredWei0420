@@ -134,7 +134,7 @@ function RedditAPI(hostname) {
      */
     this.addPost = function (postData, callback) {
         sendPostRequest('posts', {
-            url: postData.url,
+            href: postData.url,
             title: postData.title
         }, [
             ['username', postData.owner]

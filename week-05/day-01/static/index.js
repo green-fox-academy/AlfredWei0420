@@ -1,21 +1,22 @@
 'use strict';
 
 const ITEMS = document.querySelector(".items");
-const API_BASE_URL = 'http://localhost:8080';
+//const API_BASE_URL = 'http://localhost:8080';
 
 var index = 0;
-
+var cNUm = 0;
+var dNum = 0;
 window.addEventListener('load', function () {
-    fetch(API_BASE_URL+'/api/todos')
+    fetch('http://localhost:8080/api/todos')
     .then(parseResponse)
-    // .then(collectPost)
-    // .then(display) 
+    .then(collectPost)
+    .then(display) 
   })
 
 
 function parseResponse(response){
-    console.log(response.json());
-    // return response.json();
+    //console.log(response.json());
+    return response.json();
 }
 
 function collectPost(data){
@@ -74,15 +75,15 @@ function display(data) {
     //console.log(data);
     data.forEach(function (e) {
         const divItems = createItems();
-        ITEMS.appendChild(divItemss);
+        ITEMS.appendChild(divItems);
         var itemClass= document.getElementsByClassName("itemID")
         //console.log(divItems);
         const text = createTitle(e.description);
         const cButton = createComButton();
         const dButton = createDelButton();
-        newsClass[index].appendChild(text);
-        newsClass[index].appendChild(cButton);
-        newsClass[index].appendChild(dButton);
+        itemClass[index].appendChild(text);
+        itemClass[index].appendChild(cButton);
+        itemClass[index].appendChild(dButton);
         index++;
       //console.log(text);
     });

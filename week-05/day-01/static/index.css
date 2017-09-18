@@ -35,20 +35,20 @@ main{
     justify-content:space-around;
 }
 
-.itemone{
+.itemID{
     height: 120px;
     width: 250px;
     background-color: #ffe8e4;
     border-radius:3px;
 }
 
-.itemone>p{
+.itemID>p{
     font-size: 20px;
     margin-top:0;
     margin-left: 15px;
     font-weight :bold;
 }
-.itemone>#itemcom{
+.itemID>#itemcom{
     background-color: #60ec48;
     margin-top:15px;
     margin-left: 15px;
@@ -57,7 +57,7 @@ main{
     padding: 10px;
     text-align: center;
 }
-.itemone>#itemdele{
+.itemID>#itemdele{
     background-color: #f44336;
     margin-top:15px;
     height: 40px;
@@ -87,7 +87,7 @@ main{
     margin-left: 15px;
     font-weight :bold;
 }
-.addone>#itemcom{
+.itemcom{
     background-color: #60ec48;
     margin-top:15px;
     margin-left: 15px;
@@ -96,7 +96,7 @@ main{
     padding: 10px;
     text-align: center;
 }
-.addone>#itemdele{
+.itemdele{
     background-color: #f44336;
     margin-top:15px;
     height: 40px;

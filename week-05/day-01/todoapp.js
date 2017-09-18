@@ -5,13 +5,12 @@ var MongoClient = require('mongodb').MongoClient;
 var app = express();
 var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json();
-//var urlencodedParser = bodyParser.urlencoded({ extended: false });
-// app.use(express.static('./public'));
+
 app.use('/',express.static('public'));
 
 app.get('/', function(req, res){
     console.log(__dirname);
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/static/index.html");
 });
 
 //print the list

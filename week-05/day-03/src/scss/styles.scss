@@ -24,7 +24,7 @@ body{
 //Exercise-3 style2.scss
 
 //Exercise-4,5 mixin
-@mixin border-width{
+@mixin border{
     border-width: $thickness;
     border-color: #000000;
     @content;
@@ -33,5 +33,5 @@ body{
 }
 
 img{
-    @include border-width;  
+    @include border;  
 }

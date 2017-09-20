@@ -1,7 +1,10 @@
 @import "styles2";
 $thickness: 10px;
-//Exercise-1
 $color: #BC2929;
+$page-width: 1400px;
+$padding: 20px;
+
+//Exercise-1
 body{
     color:$color;
 }
@@ -39,8 +42,17 @@ img{
 .push-button{
     background-color: blue;
     font-weight: bold;
+    color: black;//ex8
+    &:focus{color: red;}  
 }
 
 .main-button{
     @extend .push-button;
+}
+
+//ex7
+#container{
+    padding: $padding;
+    width: (0.8*$page-width)-(2*$padding);
+    background-color: greenyellow;
 }

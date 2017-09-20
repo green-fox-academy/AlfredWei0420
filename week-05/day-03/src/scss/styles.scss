@@ -35,3 +35,12 @@ body{
 img{
     @include border;  
 }
+
+.push-button{
+    background-color: blue;
+    font-weight: bold;
+}
+
+.main-button{
+    @extend .push-button;
+}

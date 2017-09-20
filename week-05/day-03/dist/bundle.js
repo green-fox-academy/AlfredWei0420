@@ -112,7 +112,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "nav ul {\n  font-weight: bold;\n  padding: 5px;\n  margin: 0;\n  list-style-type: none; }\n\nnav aside a {\n  text-decoration: none;\n  color: red;\n  display: block; }\n\nbody {\n  color: #BC2929; }\n\nimg {\n  border-width: 10px;\n  border-color: #000000;\n  border-style: solid; }\n", ""]);
+exports.push([module.i, "nav ul {\n  font-weight: bold;\n  padding: 5px;\n  margin: 0;\n  list-style-type: none; }\n\nnav aside a {\n  text-decoration: none;\n  color: red;\n  display: block; }\n\nbody {\n  color: #BC2929; }\n\nimg {\n  border-width: 10px;\n  border-color: #000000;\n  border-style: solid; }\n\n.push-button, .main-button {\n  background-color: blue;\n  font-weight: bold; }\n", ""]);
 
 // exports
 

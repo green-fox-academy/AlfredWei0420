@@ -1,4 +1,5 @@
 @import "styles2";
+$thickness: 10px;
 //Exercise-1
 $color: #BC2929;
 body{
@@ -22,4 +23,15 @@ body{
 
 //Exercise-3 style2.scss
 
-//Exercise-4 style2.scss
+//Exercise-4,5 mixin
+@mixin border-width{
+    border-width: $thickness;
+    border-color: #000000;
+    @content;
+    border-style: solid
+    
+}
+
+img{
+    @include border-width;  
+}

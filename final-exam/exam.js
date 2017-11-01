@@ -13,4 +13,4 @@ function difference(a, b) {
   return result;
 }
 
-difference(a,b);
+console.log(difference(a,b));

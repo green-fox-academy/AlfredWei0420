@@ -1,0 +1,113 @@
+#container{
+    width: 960px;
+    margin: auto;
+    padding: 15px;
+    font-family: "Work Sans";
+    background-color: #3cb878;
+}
+
+header{
+    height: 45px;
+    width: 990px;
+    background-color: #215584;
+    margin-top: -15px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: -15px;
+    margin-bottom: 20px;
+}
+
+header a{
+    background-color:  #ffff00;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+.topbar{
+    font-size: 30px;
+    display: flex;
+}
+
+.topbar>p{
+    margin-top: 0;
+    font-weight: bold;
+}
+
+#search{
+    height: 30px;
+    flex-grow: 0.8;
+    opacity: 0.3;
+    font-family: "Work Sans";
+    font-size: 30px;
+}
+
+.topbar>button{
+    flex-grow: 0.2;
+    height: 36px;
+    width: 20px;
+    font-family: "Work Sans";
+    font-size: 25px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+#sider{
+    display: flex;
+}
+
+#left {
+    width: 700px;
+}
+.update{
+    height: 120px;
+}
+
+.comments{
+    height: 200px;
+}
+#right{
+    width: 210px;
+}
+.authenticate{
+    height: 120px;
+}
+.authenticate button{
+    display: block;
+    margin: 5px;
+    width: 70px;
+    font-family: "Work Sans";
+    opacity: 0.8;
+    background-color: #215584;
+    width: 205px;
+}
+
+.authenticate>input{
+    margin: 5px;
+    opacity: 0.2;
+    font-family: "Work Sans";
+    width: 200px;
+}
+
+
+#left h1{
+    background-color:  #ffff4d;
+    width: 300px;
+}
+#right h1{
+    border-bottom: 1px solid black;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.recommended p{
+    float: right;
+}

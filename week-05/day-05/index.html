@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <title>Github Lookup</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <a href="">Github</a>
+                <a href="">MDN</a>
+                <a href="">Stack Overflow</a>
+            </header>
+            <div class="top">
+                <div class="topbar">
+                    <p>greenfox-academy/</p>
+                    <input id="search" type="text" placeholder="repository name" />
+                    <button id="go">Go</button>
+                </div>
+            </div>
+            <div id="sider">
+                <aside id="left">
+                   <h1>Repository name</h1>
+                   <div class="update">
+                   </div>
+                   <div class="commits">
+                    <h1>Commits (2760)</h1>
+                    <div class="comments">
+                        <h2>Lorem ipsum dolor sit amet, quem agam docendi vis</h2>
+                        <h3>Lorem ipsum dolor sit amet, quem agam docendi vis</h3>
+                    </div>
+                   </div>
+                </aside>
+                <aside id="right">
+                    <h1>Authenticate</h1>
+                    <div class="authenticate">
+                        <input id="name" type="text" placeholder="username"/>
+                        <input id="password" type="text" placeholder="Token or password" />
+                        <button>login</button>
+                    </div>
+                    <div class="recommended">
+                        <h1>Recommended</h1>
+                        <p>Alfredwei0420</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <script src="./dist/bundle.js"></script>
+    </body>
+</html>

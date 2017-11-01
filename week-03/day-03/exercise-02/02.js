@@ -48,7 +48,6 @@ function backendRequest() {
     }//add lisener before send request always
     xhr.open('GET', Url.path + Url.page + Url.pageSize);
     xhr.send(null);
-  
 }
 
 var Url={
